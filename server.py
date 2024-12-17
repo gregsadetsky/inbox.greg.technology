@@ -22,7 +22,10 @@ def get_data():
 @app.route("/")
 def index():
     nmb_unique_threads = get_data()
-    nmb_unique_threads = nmb_unique_threads.get("nmb_unique_threads", "N/A")
+    if nmb_unique_threads:
+        nmb_unique_threads = nmb_unique_threads["nmb_unique_threads"]
+    else:
+        nmb_unique_threads = "N/A"
     return render_template("index.html", nmb_unique_threads=nmb_unique_threads)
 
 
