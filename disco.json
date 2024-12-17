@@ -1,0 +1,17 @@
+{
+    "version": "1.0",
+    "services": {
+        "web": {
+            "port": 8080,
+            "volumes": [{
+                "name": "data",
+                "destinationPath": "/data"
+            }]
+        },
+        "mycron": {
+            "type": "cron",
+            "schedule": "*/5 * * * *",
+            "command": "python ./cron.py"
+        }
+    }
+}
