@@ -40,6 +40,7 @@ def cron():
 
     data = {
         "nmb_unique_threads": nmb_unique_threads,
+        "timestamp": datetime.now().isoformat(),
     }
 
     with open(DATABASE_FILE, "w+") as f:
