@@ -11,7 +11,7 @@
         "mycron": {
             "type": "cron",
             "schedule": "*/1 * * * *",
-            "command": "python ./cron.py",
+            "command": "./cron.sh",
             "volumes": [{
                 "name": "data",
                 "destinationPath": "/data"
