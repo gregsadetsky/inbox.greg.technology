@@ -1,7 +1,7 @@
 FROM python:3.12.1
 
-RUN apt update
-RUN apt-get install magic-wormhole
+RUN apt update -y
+RUN apt-get install -y magic-wormhole
 
 # docker will not re-pip install if requirements.txt doesn't change
 WORKDIR /code
