@@ -10,7 +10,7 @@
         },
         "mycron": {
             "type": "cron",
-            "schedule": "*/1 * * * *",
+            "schedule": "*/10 * * * *",
             "command": "bash ./cron.sh",
             "volumes": [{
                 "name": "data",
