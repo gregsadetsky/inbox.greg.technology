@@ -1,1 +1,1 @@
-curl -X POST http://web$SECRET_CRON_URL_PATH
+curl -X POST http://web:8080$SECRET_CRON_URL_PATH
