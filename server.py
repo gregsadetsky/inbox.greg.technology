@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 
 from dotenv import load_dotenv
-from flask import Flask
+from flask import Flask, render_template
 
 load_dotenv()
 
@@ -20,8 +20,10 @@ def get_data():
 
 
 @app.route("/")
-def hello_world():
-    return f"data: {get_data()}"
+def index():
+    nmb_unique_threads = get_data()
+    nmb_unique_threads = nmb_unique_threads.get("nmb_unique_threads", "N/A")
+    return render_template("index.html", nmb_unique_threads=nmb_unique_threads)
 
 
 if __name__ == "__main__":

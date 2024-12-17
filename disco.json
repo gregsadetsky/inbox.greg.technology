@@ -10,8 +10,12 @@
         },
         "mycron": {
             "type": "cron",
-            "schedule": "*/5 * * * *",
-            "command": "python ./cron.py"
+            "schedule": "*/1 * * * *",
+            "command": "python ./cron.py",
+            "volumes": [{
+                "name": "data",
+                "destinationPath": "/data"
+            }]
         }
     }
 }
