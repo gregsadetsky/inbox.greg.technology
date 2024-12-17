@@ -17,5 +17,5 @@ data = {
     "nmb_unique_threads": nmb_unique_threads,
 }
 
-with open(DATA_FILE, "a") as f:
+with open(DATA_FILE, "w+") as f:
     json.dump(data, f)
