@@ -1,4 +1,8 @@
 # inbox.greg.technology
 
-if you need a thing to ping the cron url for some reason, use https://statuscake.com, it works well!
- 
+see how many email I (Greg) have in my gmail inbox! site --->>> [https://inbox.greg.technology/](https://inbox.greg.technology/)
+
+### thanks
+
+- [code for gmail api interactions](https://github.com/x4nth055/pythoncode-tutorials/tree/master/general/gmail-api) - thanks a ton!!
+- thanks to the same author as above for this [incredibly detailed tutorial](https://thepythoncode.com/article/use-gmail-api-in-python)! the steps to setup the gmail api / GCP json token thing are bananas! but just follow the steps, it all works!!

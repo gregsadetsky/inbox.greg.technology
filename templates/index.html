@@ -25,7 +25,7 @@
 <body>
 
   <div class="container">
-    <div class="text">Greg has {{ nmb_unique_threads }} emails in his inbox.</div>
+    <div class="text">Greg has {{ nmb_unique_threads }} {{ 'email' if nmb_unique_threads == 1 else 'emails' }} in his inbox.</div>
   </div>
 
 </body>
