@@ -8,3 +8,4 @@ see how many email I (Greg) have in my gmail inbox! site --->>> [https://inbox.g
 - thanks to the same author as above for this [incredibly detailed tutorial](https://thepythoncode.com/article/use-gmail-api-in-python)! the steps to setup the gmail api / GCP json token thing are bananas! but just follow the steps, it all works!!
 
 
+
