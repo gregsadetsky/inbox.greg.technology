@@ -1,21 +1,17 @@
 {
     "version": "1.0",
-    "services": {
-        "web": {
+    "services":
+    {
+        "web":
+        {
             "port": 8080,
-            "volumes": [{
-                "name": "data",
-                "destinationPath": "/data"
-            }]
-        },
-        "mycron": {
-            "type": "cron",
-            "schedule": "*/10 * * * *",
-            "command": "bash ./cron.sh",
-            "volumes": [{
-                "name": "data",
-                "destinationPath": "/data"
-            }]
+            "volumes":
+            [
+                {
+                    "name": "data",
+                    "destinationPath": "/data"
+                }
+            ]
         }
     }
 }
