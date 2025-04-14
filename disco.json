@@ -12,6 +12,19 @@
                     "destinationPath": "/data"
                 }
             ]
+        },
+        "mycron":
+        {
+            "type": "cron",
+            "schedule": "*/10 * * * *",
+            "command": "bash ./cron.sh",
+            "volumes":
+            [
+                {
+                    "name": "data",
+                    "destinationPath": "/data"
+                }
+            ]
         }
     }
 }
